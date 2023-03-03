@@ -16,6 +16,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import {TimelineModule} from 'primeng/timeline';
+
 @NgModule({
   declarations: [
     AppComponent,
