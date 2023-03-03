@@ -1,1 +1,111 @@
 /* You can add global styles to this file, and also import other style files */
+/* Application-wide Styles */
+/*
+--gunmetal: #1C2925ff;
+--cambridge-blue: #749387ff;
+--cambridge-blue-2: #8BA99Aff;
+--hookers-green: #68857Bff;
+--cambridge-blue-3: #8AA699ff;
+Navy Blue: #000c66
+*/
+@import "~angular-vertical-timeline/dist/vertical-timeline.css";
+h1 {
+    color:#7ec8e3;
+    font-family: 'Lucida Handwriting' ;
+    font-size: 250%;
+    font-weight: bold;
+    text-align: center;
+    -webkit-text-stroke: 2px #000000;
+  }
+  h2, h3 {
+    color: #ffffff;
+    -webkit-text-stroke: 1px #000000;
+
+    font-family: 'Lucida Console', sans-serif;
+    font-weight: bold;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+
+  }
+  h4, h5{
+    color: #ffffff;
+    text-align: left;
+    font-family: Georgia, serif;
+    font-weight: bold;
+  }
+  body {
+    margin: 2em;
+    background-position:  center top; 
+    background-image: url('assets\personabginvertedgreen.jpg'), linear-gradient(#8AA699ff,#68857Bff,#8BA99Aff, #749387ff,#7ec8e3);
+    background-repeat: no-repeat;
+  }
+
+  body, input[type="text"], button {
+    color: #000000;
+    font-family: Georgia, serif;
+
+  }
+
+  button {
+    background-color: #eee;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: black;
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  button:hover {
+    background-color: black;
+    color: white;
+  }
+  button:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: auto;
+  }
+  
+  /* everywhere else */
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  pdf-viewer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(5px 5px 5px #222222);
+  }
+  
+  textarea {
+      margin-top: 15px; 
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+  }
+  .navbar .nav .nav-link {
+    color: #fffefe;
+    font-family: 'Lucida Console', sans-serif;
+    font-weight: bold;
+    font-size: large;
+  }
+  .navbar .nav .nav-link:hover{
+    color: #050505;
+  }
+  .navbar .nav {
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+    margin-left: auto;
+    margin-right: auto;
+    border-color:#7ec8e3;
+    border-style: outset;
+  }
+  .progress{
+    --bs-progress-bar-bg: #000c66
+  }
+
+  .card{
+    --bs-card-border-width: 10px;
+    --bs-card-border-color:  #000c66
+  }
