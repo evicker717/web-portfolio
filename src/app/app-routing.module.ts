@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ResumeComponent } from './resume/resume.component';
+import { rsaComponent } from './rsa/rsa.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
 {
   path: 'projects',
   component: ProjectsComponent
+},
+{
+  path: 'rsa',
+  component: rsaComponent
 },
 ];
 

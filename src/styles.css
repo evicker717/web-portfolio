@@ -9,7 +9,7 @@
 Navy Blue: #000c66
 */
 h1 {
-    color:#7ec8e3;
+    color:#e37e7e;
     font-family: 'Lucida Handwriting' ;
     font-size: 250%;
     font-weight: bold;
@@ -17,7 +17,7 @@ h1 {
     -webkit-text-stroke: 2px #000000;
   }
   h2, h3 {
-    color: #ffffff;
+    color: #ff2d00;
     -webkit-text-stroke: 1px #000000;
 
     font-family: 'Lucida Console', sans-serif;
@@ -34,7 +34,7 @@ h1 {
   body {
     margin: 2em;
     background-position:  center top; 
-    background-image: url('assets\personabginvertedgreen.jpg'), linear-gradient(#8AA699ff,#68857Bff,#8BA99Aff, #749387ff,#7ec8e3);
+    background-image: url('assets\bgpersona.jpg'), linear-gradient(#000,#1B1212,#28282B);
     background-repeat: no-repeat;
   }
 

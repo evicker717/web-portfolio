@@ -1,68 +1,37 @@
-<!--
+
 <div class="container-fluid text-center" style="margin:auto;">
-
+    <div class="row">
+        <h1>Resume</h1>
+    </div>
 <div class="row">
-<h1>Resume</h1>
+
+<div class="col-md">
+<div class="card">
+    <h3>Experience</h3>
+	<p-timeline [value]="events" align="alternate" styleClass="customized-timeline">
+		<ng-template pTemplate="marker" let-event>
+			<span class="custom-marker p-shadow-2" [style.backgroundColor]="event.color">
+                <i [ngClass]="event.icon"></i>
+            </span>
+            
+		</ng-template>
+		<ng-template pTemplate="content" let-event>
+			<p-card [header]="event.title" [subheader]="event.date">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    view details
+                  </button>
+            <div class="collapse" id="collapseExample">
+				<p>{{event.description}} </p>
+            </div>
+			</p-card>
+		</ng-template>
+	</p-timeline>
 </div>
-<h3 style="align-content: center;">Work History</h3>
-<div class="row" style="align-content: center;">
-    <div class="col-md-auto" style= "align-content:left">
-            <div class="card" style="width: 38rem;">
-                <div class="card-title">
-                    <h3>Media Technician</h3>
-                </div>
-                <div class="card-subtitle">
-                    <h5>Kalamazoo College</h5>
-                </div>
-                <div class="card-body">
-                    <p>Facilitated college staff & faculty with setup and operations of various multimedia devices, 
-                        such as projectors, desktop computers, speakers, cameras, & microphones. 
-                        Installed upgraded Epson projectors in rooms on campus. Soldered and assembled XLR cables. 
-                        Applied interpersonal skills to explain technologies to people with less experience.
-                         Operated video cameras, soundboards, and livestreaming equipment for various campus events.
-                    </p>
-                </div>
-            </div>
-    </div>
-    <div class="col-md-auto" style="border-right-style: solid; border-width: 5px;">
-        <h1><i class="bi bi-caret-right-fill"></i></h1>
-    </div>
-    
-    <div class="col-md-auto"style="border-left-style: solid; border-width: 5px;">
-        <div class="col" style="height: 150px;"></div>
-
-        <h1><i class="bi bi-caret-left-fill"></i></h1>
-    </div>
-    <div class="col-md-auto">
-
-        <div class="col" style="height: 150px;"></div>
-
-            <div class="card" style="width:38rem">
-                <div class="card-title">
-                    <h3>Software Development Intern</h3>
-                </div>
-                <div class="card-subtitle">
-                    <h5>Virtual Music Ensemble Technologies</h5>
-                </div>
-                <div class="card-body">
-                    <p>Designed & built a desktop application using React JS & Electron. 
-                        Implemented an account feature using AWS Cognito. 
-                        Implemented a system for tracking data points each user was associated with using AWS DynamoDB.
-                         Implemented features for retrieving specific JPG and MP4 files from S3 buckets based on other user information. 
-                         Collaborated with others to debug problems in the mobile application.
-                          Created a website to allow users to link accounts.
-                    </p>
-                </div>
-            </div>
+</div>
+<div class="col-md">
+    <div class="card">
         </div>
+    </div>
 
 </div>
 </div>
--->
-
-<p-timeline [value]="events">
-    <ng-template pTemplate="content" let-event>
-        {{event.status}}
-    </ng-template>
-</p-timeline>
-

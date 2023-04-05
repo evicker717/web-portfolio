@@ -1,0 +1,29 @@
+<h2>Ceasar Cipher</h2>
+<form
+[formGroup]="Encrypt"
+(ngSubmit)="encrypt()"
+class="bg-white flex flex-col w-full mt-8"
+>
+<label>Text to be encoded: </label>
+<input formControlName="text" type="text" id="text" name="text" />
+<label>Shift Value: </label>
+
+<input formControlName="shift" type="shift" id="shift" name="shift" />
+<button type="encrypt">
+    Encrypt
+</button>
+</form>
+<form
+[formGroup]="Decrypt"
+(ngSubmit)="decrypt()"
+class="bg-white flex flex-col w-full mt-8"
+>
+<label>Text to be decrypted: </label>
+<input formControlName="text2" type="text2" id="text2" name="text2" />
+<label>Shift Value: </label>
+
+<input formControlName="shift2" type="shift2" id="shift2" name="shift2" />
+<button type="decrypt">
+    Decrypt
+</button>
+</form>

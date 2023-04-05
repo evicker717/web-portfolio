@@ -1,1 +1,16 @@
-<p>projects works!</p>
+<div class="container text-center">
+    <div class="row">
+      
+        <div div class="col-sm" *ngFor="let project of projects">
+        <div class="card" style="width: 18rem;">
+            <img src={{project.image}} class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">{{project.title}}</h3>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Created For: {{project.origin}}</h6>
+              <p class="card-text">{{project.description}}</p>
+              <a href={{project.link}} routerLinkActive="active" ariaCurrentWhenActive="page">Learn More</a>   
+          </div>
+      </div>
+      </div>
+
+      </div>

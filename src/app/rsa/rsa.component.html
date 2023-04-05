@@ -1,0 +1,29 @@
+<router-outlet>
+<h2>RSA Cipher</h2>
+<form
+[formGroup]="Encrypt"
+(ngSubmit)="encrypt()"
+class="bg-white flex flex-col w-full mt-8"
+>
+<p>public keys: 13,2537</p>
+<p>private keys: 937</p>
+
+<label>Text to be encoded: </label>
+<input formControlName="text" type="text" id="text" name="text" />
+<button type="encrypt">
+    Encrypt
+</button>
+</form>
+<form
+[formGroup]="Decrypt"
+(ngSubmit)="decrypt()"
+class="bg-white flex flex-col w-full mt-8"
+>
+<label>Text to be decrypted: </label>
+<input formControlName="text2" type="text2" id="text2" name="text2" />
+
+<button type="decrypt">
+    Decrypt
+</button>
+</form>
+</router-outlet>
