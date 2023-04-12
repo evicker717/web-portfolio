@@ -17,7 +17,7 @@ export class ProjectsComponent implements OnInit {
       {
         title:"parK @ K",
         origin:"CS490",
-        description:"An app developed with the purpose of ",
+        description:"An app developed with the purpose of tracking the parking spaces around Kalamazoo College Campus",
         image:"/assets/parKicon.jpg",
         link:""
       },
@@ -29,13 +29,6 @@ export class ProjectsComponent implements OnInit {
         link:""
 
 
-      },
-      {
-        title:"Dungeons & Dragons Character Randomizer",
-        origin:"Personal Use",
-        description:"",
-        image:"",
-        link:""
       },
       {
         title:"Personal Website",

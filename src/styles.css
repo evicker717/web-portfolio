@@ -9,33 +9,33 @@
 Navy Blue: #000c66
 */
 h1 {
-    color:#e37e7e;
-    font-family: 'Lucida Handwriting' ;
+    color:#9C27B0;
+    font-family: 'Lucida Console' ;
     font-size: 250%;
     font-weight: bold;
     text-align: center;
     -webkit-text-stroke: 2px #000000;
   }
   h2, h3 {
-    color: #ff2d00;
+    color: #7ec8e3;
     -webkit-text-stroke: 1px #000000;
-
-    font-family: 'Lucida Console', sans-serif;
+    font-family: 'Lucida', sans-serif;
     font-weight: bold;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
 
   }
   h4, h5{
     color: #ffffff;
     text-align: left;
-    font-family: Georgia, serif;
+    font-family: 'Lucida Serif', serif;
     font-weight: bold;
   }
   body {
     margin: 2em;
     background-position:  center top; 
-    background-image: url('assets\bgpersona.jpg'), linear-gradient(#000,#1B1212,#28282B);
+    background-image: url('assets\personabglight.png'), linear-gradient(#7e817e, #7e817e);
     background-repeat: no-repeat;
+    
   }
 
   body, input[type="text"], button {
@@ -106,5 +106,5 @@ h1 {
 
   .card{
     --bs-card-border-width: 10px;
-    --bs-card-border-color:  #000c66
+    --bs-card-border-color:  #b5e6ff
   }
