@@ -20,6 +20,8 @@ import {CardModule} from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
 import { CipherComponent } from './cipher/cipher.component';
 import { rsaComponent } from './rsa/rsa.component';
+import { FooterComponent } from './footer/footer.component';
+import { HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { rsaComponent } from './rsa/rsa.component';
     ProjectsComponent,
     HomeComponent,
     CipherComponent,
-    rsaComponent
+    rsaComponent,
+    FooterComponent,
+    
 
   ],
   imports: [
@@ -51,4 +55,8 @@ import { rsaComponent } from './rsa/rsa.component';
   providers: [],
   bootstrap: [AppComponent, ResumeComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+ 
+}
+ 
